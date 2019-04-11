@@ -1,7 +1,6 @@
 
 
 using System.Windows.Controls;
-using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace StockTraderRI.ChartControls

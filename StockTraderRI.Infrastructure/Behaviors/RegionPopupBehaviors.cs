@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Windows;
 using Prism.Regions;
-using Microsoft.Practices.ServiceLocation;
 using System;
+using CommonServiceLocator;
 
 namespace StockTraderRI.Infrastructure.Behaviors
 {

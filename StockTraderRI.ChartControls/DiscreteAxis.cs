@@ -2,8 +2,6 @@
 
 using System.Windows.Controls;
 using System.Windows;
-using System.Windows.Data;
-using System;
 using System.Collections.ObjectModel;
 
 

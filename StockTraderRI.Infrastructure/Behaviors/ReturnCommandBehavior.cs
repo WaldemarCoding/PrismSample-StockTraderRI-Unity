@@ -1,7 +1,6 @@
 ﻿using System.Windows.Controls;
 using System.Windows.Input;
 using System;
-using Prism.Commands;
 using Prism.Interactivity;
 
 namespace StockTraderRI.Infrastructure.Behaviors

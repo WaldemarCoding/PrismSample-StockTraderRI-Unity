@@ -63,7 +63,7 @@ namespace StockTraderRI.Modules.Position.Orders
             set
             {
                 SetProperty(ref this.transactionInfo, value);
-                this.OnPropertyChanged(() => this.TickerSymbol);
+                RaisePropertyChanged(nameof(TickerSymbol));
             }
         }
 
@@ -76,7 +76,7 @@ namespace StockTraderRI.Modules.Position.Orders
                 if (this.transactionInfo.TransactionType != value)
                 {
                     this.transactionInfo.TransactionType = value;
-                    OnPropertyChanged(() => this.TransactionType);
+                    RaisePropertyChanged(nameof(TransactionType));
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace StockTraderRI.Modules.Position.Orders
                 if (this.transactionInfo.TickerSymbol != value)
                 {
                     this.transactionInfo.TickerSymbol = value;
-                    OnPropertyChanged(() => this.TickerSymbol);
+                    RaisePropertyChanged(nameof(TickerSymbol));
                 }
             }
         }

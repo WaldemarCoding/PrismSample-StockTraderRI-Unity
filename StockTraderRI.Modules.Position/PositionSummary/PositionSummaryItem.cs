@@ -43,7 +43,7 @@ namespace StockTraderRI.Modules.Position.PositionSummary
             {
                 if (SetProperty(ref _costBasis, value))
                 {
-                    this.OnPropertyChanged(() => this.GainLossPercent);
+                    this.RaisePropertyChanged(nameof(GainLossPercent));
                 }
             }
         }
@@ -61,8 +61,8 @@ namespace StockTraderRI.Modules.Position.PositionSummary
             {
                 if (SetProperty(ref _shares, value))
                 {
-                    this.OnPropertyChanged(() => this.MarketValue);
-                    this.OnPropertyChanged(() => this.GainLossPercent);
+                    this.RaisePropertyChanged(nameof(MarketValue));
+                    this.RaisePropertyChanged(nameof(GainLossPercent));
                 }
             }
         }
@@ -80,8 +80,8 @@ namespace StockTraderRI.Modules.Position.PositionSummary
             {
                 if (SetProperty(ref _currentPrice, value))
                 {
-                    this.OnPropertyChanged(() => this.MarketValue);
-                    this.OnPropertyChanged(() => this.GainLossPercent);
+                    this.RaisePropertyChanged(nameof(MarketValue));
+                    this.RaisePropertyChanged(nameof(GainLossPercent));
                 }
             }
         }

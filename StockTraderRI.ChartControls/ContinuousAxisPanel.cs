@@ -6,8 +6,6 @@ using System.Windows.Media;
 using System.Collections.ObjectModel;
 using System;
 using System.Windows.Data;
-using System.Collections;
-using System.ComponentModel;
 using System.Collections.Specialized;
 
 namespace StockTraderRI.ChartControls
